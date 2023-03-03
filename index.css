@@ -142,7 +142,7 @@ body {
 
 #storm_one{
     width: 40%;
-    background-image: url(../Resources/Pictures/storm_damage.jpeg);
+    background-image: url(../Resources/Pictures/storm_damage_resized.jpeg);
     background-position: center;
     background-size: cover;
     background-position: center;
@@ -165,7 +165,7 @@ body {
 
 #storm_three{
     width: 40%;
-    background-image: url(../Resources/Pictures/storm_cleanup_crop.jpeg);
+    background-image: url(./Resources/Pictures/storm_cleanup_crop_resized.jpeg);
     background-position: center;
     background-size: cover;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -178,7 +178,7 @@ body {
 
 #trim_one{
     width: 35%;
-    background-image: url(../Resources/Pictures/tree_trim_before.jpg);
+    background-image: url(../Resources/Pictures/tree_trim_before_resized.jpg);
     background-size: cover;
 }
 
@@ -192,13 +192,13 @@ body {
 
 #trim_three{
     width: 35%;
-    background-image: url(../Resources/Pictures/tree_trim_after.jpg);
+    background-image: url(../Resources/Pictures/tree_trim_after_resized.jpg);
     background-size: cover;
 }
 
 #services_one{
     width: 40%;
-    background-image: url(../Resources/Pictures/stump_grinder.jpg);
+    background-image: url(../Resources/Pictures/stump_grinder_resized.jpg);
     background-size: cover;
 }
 

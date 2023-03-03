@@ -35,7 +35,7 @@ let carouselInterval = setInterval(() => {
     let nextSlide = currentSlide.nextElementSibling;
 
     moveCarousel(track, currentSlide, nextSlide);
-}, 4500);
+}, 6500);
 
 //set slides in position
 const setSlidePosition = (slide, index) => {
