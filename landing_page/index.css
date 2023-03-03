@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(228, 83, 16);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #2F4858;
+}
+
+.hero{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.title_bar{
+    height: 12vh;
+    color: rgb(228, 83, 16);
+    padding-inline: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation{
+    list-style: none;
+    display:flex;
+}
+.link{
+    position: relative;
+    top: 50%;
+    margin-left: 2rem;
+    font-size: 2.5vw;
+}
+.name{
+    font-size: 5vw;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-block: auto;
+}
+
+.carousel{
+    position: relative;
+    min-height: 88vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.track_container{
+    position: relative;
+    min-height: inherit;
+    width: inherit;
+    list-style: none;
+    display: flex;
+    color: white;
+    transition: color 0.5s ease-in -.5s;
+    transition: transform 1.5s ease-out;
+}
+
+.slide_selector{
+    height: 100%;
+    background: rgba(145, 143, 143, 0.4);
+    z-index: 30;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.slide_selector:hover{
+    background:rgba(145, 143, 143, 0.9);
+}
+.slide_selector--left{
+    position: absolute;
+}
+
+.slide_selector--right{
+    position: absolute;
+    right:0;
+}
+
+.carousel_nav{
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel_indicator{
+    border: none;
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vw;
+    background-color:rgba(145, 143, 143, 0.4);
+    margin-inline: 10px;
+    cursor: pointer;
+}
+
+.carousel_indicator:hover{
+    width: 1.25vw;
+    height: 1.25vw;
+    background:rgba(145, 143, 143, 0.8);
+}
+
+.current_slide--indicator{
+    background-color:rgba(145, 143, 143, 0.99)
+}
+
+.slide{
+    position:absolute;
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.splash{
+    min-height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../Resources/Pictures/landing_background.jpeg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.tagline{
+    position: absolute;
+    width: fit-content;
+    left: 65%;
+    top: 70%;
+    font-size: 3.25vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+}
+
+#storm_one{
+    width: 40%;
+    background-image: url(../Resources/Pictures/storm_damage.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 2em;
+}
+
+#storm_two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vw;
+}
+
+#storm_three{
+    width: 40%;
+    background-image: url(../Resources/Pictures/storm_cleanup_crop.jpeg);
+    background-position: center;
+    background-size: cover;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 2em;
+}
+
+#trim_one{
+    width: 35%;
+    background-image: url(../Resources/Pictures/tree_trim_before.jpg);
+    background-size: cover;
+}
+
+#trim_two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#trim_three{
+    width: 35%;
+    background-image: url(../Resources/Pictures/tree_trim_after.jpg);
+    background-size: cover;
+}
+
+#services_one{
+    width: 40%;
+    background-image: url(../Resources/Pictures/stump_grinder.jpg);
+    background-size: cover;
+}
+
+#services_two {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_heading {
+    font-size: 3vw;
+}
+
+.services li {
+    font-size: 2vw;
+    padding-top: 2rem;
+}
+
+.business_card {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.business_info{
+    list-style: none;
+    color: rgb(228, 83, 16);
+    font-size: 3vw;
+    margin-top: .75em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
