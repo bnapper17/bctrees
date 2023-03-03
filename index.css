@@ -66,9 +66,9 @@ body {
 
 .slide_selector{
     height: 100%;
+    padding-inline: .5vw;
     background: rgba(145, 143, 143, 0.4);
     z-index: 30;
-    color: white;
     cursor: pointer;
     border: none;
 }
@@ -110,7 +110,7 @@ body {
 }
 
 .current_slide--indicator{
-    background-color:rgba(145, 143, 143, 0.99)
+    background-color: rgba(255,255,255, .8);
 }
 
 .slide{
@@ -221,6 +221,7 @@ body {
 }
 
 .business_card {
+    position: relative;
     background-color: black;
     display: flex;
     justify-content: space-evenly;
@@ -236,4 +237,10 @@ body {
     font-size: 3vw;
     margin-top: .75em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.facebook_link {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
 }
