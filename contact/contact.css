@@ -51,6 +51,24 @@ a:hover {
     margin-block: auto;
 }
 
+.mobile_name {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .name {
+        display: none;
+    }
+    .mobile_name {
+        display: block;
+        padding: 1vw;
+    }
+    .link{
+        font-size: 5vw;
+        margin-left: 1rem;
+    }
+}
+
 .container {
     color: white;
     height: 100vh;

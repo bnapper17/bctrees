@@ -39,10 +39,29 @@ body {
     margin-left: 2rem;
     font-size: 2.5vw;
 }
+
 .name{
     font-size: 5vw;
     font-family:Arial, Helvetica, sans-serif;
     margin-block: auto;
+}
+
+.mobile_name {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .name {
+        display: none;
+    }
+    .mobile_name {
+        display: block;
+        padding: 1vw;
+    }
+    .link{
+        font-size: 5vw;
+        margin-left: 1rem;
+    }
 }
 
 .carousel{
@@ -76,6 +95,13 @@ body {
 .slide_selector:hover{
     background:rgba(145, 143, 143, 0.9);
 }
+
+@media only screen and ( max-width: 768px ){
+    .slide_selector:hover {
+        background: rgba(145, 143, 143, 0.4)
+    }
+}
+
 .slide_selector--left{
     position: absolute;
 }
@@ -113,6 +139,23 @@ body {
     background-color: rgba(255,255,255, .8);
 }
 
+@media only screen and (max-width: 768px) {
+    .carousel_indicator {
+        width: 3vw;
+        height: 3vw;
+        background-color: rgba(145, 143, 143, 0.8)
+    }
+
+    .carousel_indicator:hover {
+        width: 3vw;
+        height: 3vw;
+        background: rgba(255, 255, 255, .8);
+    }
+    .current_slide--indicator {
+        background-color: rgba(255, 255, 255, .8)
+    }
+}
+
 .slide{
     position:absolute;
     min-height: 100%;
@@ -140,6 +183,20 @@ body {
     background-color: transparent;
 }
 
+@media only screen and (max-width: 768px) {
+    
+    .splash {
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../Resources/Pictures/mobile_splash.jpg);
+        background-position: center;
+        
+    }
+
+    .tagline {
+        left: 30%;
+        font-size: 7vw;
+    }
+}
+
 #storm_one{
     width: 40%;
     background-image: url(../Resources/Pictures/storm_damage_resized.jpeg);
@@ -152,6 +209,10 @@ body {
     justify-content: center;
     align-items: end;
     padding-bottom: 2em;
+}
+
+.mobile_subheading {
+    display: none;
 }
 
 #storm_two{
@@ -176,6 +237,28 @@ body {
     padding-bottom: 2em;
 }
 
+@media only screen and (max-width: 768px) {
+    #storm_two{
+        display: none;
+    }
+    #storm_three {
+        display: none;
+    }
+    #storm_one {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 6vw;
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(./Resources/Pictures/storm_damage_resized.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .mobile_subheading {
+        display: block;
+    }
+}
+
 #trim_one{
     width: 35%;
     background-image: url(../Resources/Pictures/tree_trim_before_resized.jpg);
@@ -194,6 +277,26 @@ body {
     width: 35%;
     background-image: url(../Resources/Pictures/tree_trim_after_resized.jpg);
     background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    #trim_two {
+        display: none;
+    }
+    #trim_three {
+        display: none;
+    }
+    #trim_one {
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./Resources/Pictures/tree_trim_before_resized.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 6vw;
+    }
 }
 
 #services_one{
@@ -220,6 +323,25 @@ body {
     padding-top: 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+    #services_one {
+        display: none;
+    }
+    #services_two {
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./Resources/Pictures/stump_grinder_resized.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+    .list_heading {
+        font-size: 7vw;
+    }
+
+    .services li {
+        font-size: 6vw;
+    }
+}
+
 .business_card {
     position: relative;
     background-color: black;
@@ -233,9 +355,10 @@ body {
 
 .business_info{
     list-style: none;
-    color: rgb(228, 83, 16);
-    font-size: 3vw;
-    margin-top: .75em;
+    color: rgb(197, 110, 70);
+    font-size: 3.5vw;
+    margin-block: auto;
+    line-height: 1.5;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -243,4 +366,8 @@ body {
     position: absolute;
     bottom: 10%;
     right: 5%;
+}
+
+#logo {
+    width: 35vw;
 }

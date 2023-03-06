@@ -45,6 +45,24 @@ a:hover {
     margin-block: auto;
 }
 
+.mobile_name {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .name {
+        display: none;
+    }
+    .mobile_name {
+        display: block;
+        padding: 1vw;
+    }
+    .link{
+        font-size: 5vw;
+        margin-left: 1rem;
+    }
+}
+
 .services{
     height: 88vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../Resources/Pictures/services_background_resized.jpeg);
