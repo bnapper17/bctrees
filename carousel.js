@@ -15,15 +15,25 @@ const setSlidePosition = (slide, index) => {
 slides.forEach(setSlidePosition);
 
 window.onresize = () => {
-    const slideWidth = slides[0].getBoundingClientRect().width
+
+    const resizeWidth = slides[0].getBoundingClientRect().width;
+    const currentSlide = track.getElementsByClassName('current_slide')[0];
+    const slideIndex = slides.indexOf(currentSlide);
+    const repositionAmount = resizeWidth * slideIndex + 'px';
+
     const setSlidePosition = (slide, index) => {
-        slide.style.left = slideWidth * index + 'px';
+        slide.style.left = resizeWidth * index + 'px';
+
     };
-    
+ 
     slides.forEach(setSlidePosition);
 
-    console.log(slides[1].style.left);
-    console.log(slideWidth);
+    track.style.transform = 'translateX(-' + repositionAmount + ')';
+    track.style.transition = 'none';
+
+    console.log(slideIndex);
+    console.log(repositionAmount);
+    console.log(resizeWidth);
 };
 
 // function for moving slide to either the left or right
@@ -39,6 +49,7 @@ const moveCarousel = (track, currentSlide, targetSlide) => {
         targetDot = dots[0];
     }
     
+    track.style.transition = 'transform 1.5s ease-out';
     track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
     currentSlide.classList.remove('current_slide');
     targetSlide.classList.add('current_slide');
