@@ -4,8 +4,27 @@ const prevButton = document.getElementsByClassName('slide_selector--left')[0];
 const nextButton = document.getElementsByClassName('slide_selector--right')[0];
 const dotNav = document.getElementsByClassName('carousel_nav')[0];
 const dots = Array.from(dotNav.children)
-const slideWidth = slides[0].getBoundingClientRect().width;
+let slideWidth = slides[0].getBoundingClientRect().width;
 
+
+//set slides in position
+const setSlidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + 'px';
+};
+
+slides.forEach(setSlidePosition);
+
+window.onresize = () => {
+    const slideWidth = slides[0].getBoundingClientRect().width
+    const setSlidePosition = (slide, index) => {
+        slide.style.left = slideWidth * index + 'px';
+    };
+    
+    slides.forEach(setSlidePosition);
+
+    console.log(slides[1].style.left);
+    console.log(slideWidth);
+};
 
 // function for moving slide to either the left or right
 const moveCarousel = (track, currentSlide, targetSlide) => {
@@ -36,14 +55,6 @@ let carouselInterval = setInterval(() => {
 
     moveCarousel(track, currentSlide, nextSlide);
 }, 6500);
-
-//set slides in position
-const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-};
-
-slides.forEach(setSlidePosition);
-
 
 
 

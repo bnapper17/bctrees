@@ -58,6 +58,7 @@ a:hover {
     
 }
 
+
 .form_container {
     height: 88vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url('../Resources/Pictures/logo.png');
@@ -90,21 +91,23 @@ header {
     flex-direction: column;
 }
 
+.form_text-box {
+ font-size: 1.75rem;
+ font-weight: bold; 
+ opacity: .7;  
+}
+
 #form_input{
     height: fit-content
 }
 
-.form_container input{
-    opacity: .7;
+label {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.form_container textarea {
-     opacity: .7;
- }
-
-
- .submit {
-     position: absolute;
+.submit {
+     /* position: absolute; */
      left: 19.5%;
  }
 
