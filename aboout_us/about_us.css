@@ -75,6 +75,14 @@ a:hover {
     overflow-y: scroll;
 }
 
+.sentence {
+    margin-left: 1vw;
+}
+
+.paragraph {
+    margin-left: 6vw;
+}
+
 h2 {
     font-size: 5vw;
     margin-block: 1rem;
