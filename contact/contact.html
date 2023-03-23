@@ -24,40 +24,43 @@
 
         <div class="form_container"> 
 
-            <header>
-                <h2>Contact Us</h2>
-                <p>If you would like to inquire about our services or if you would like to set up a free estimate please contact us using the form below. </br> Or give us a call at 812-572-1047. Thank you and God Bless.</p>
-            </header>
-            <form action="https://formsubmit.co/5844f9e0d5351ea74bfe2e2179dba97b" method="POST">
-                <section id="form_input">
-                    <div class="form">
-                        <label for="first_name">Name:</label>
-                        <input class="form form_text-box" type="text" name="name" id="name" required>
-                    </div>
-                    
-                    <!-- honey pot -->
-                    <input type="text" name="_honey" style="display: none;" >
-                    <!-- Disable Captcha  -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <!-- success redirect  -->
-                    <input type="hidden" name="_next" value="https://bctrees.netlify.app/contact/success.html">
-                   
-                    <div class="email form">
-                        <label for="email_address">E-mail:</label>
-                        <input class="form form_text-box" type="text" name="email" id="email_address" required>
-                    </div>
-                   
-                    <div class="message form">
-                        <label for="message">Message:</label>
-                        <textarea class="form form_text-box" name="message" id="message" rows="10" cols="30" required></textarea>
-                    </div>
-                </section>
+            <div class="form_content">
                 
-                <div class="submit form">
-                    <input type="submit" value="Send" id="button">
-                </div> 
+                <header>
+                    <h2>Contact Us</h2>
+                    <p>If you would like to inquire about our services or if you would like to set up a free estimate please contact us using the form below. </br> Or give us a call at 812-572-1047. Thank you and God Bless.</p>
+                </header>
+                <form action="https://formsubmit.co/5844f9e0d5351ea74bfe2e2179dba97b" method="POST">
+                    <section id="form_input">
+                        <div class="form">
+                            <label for="first_name">Name:</label>
+                            <input class="form form_text-box" type="text" name="name" id="name" required>
+                        </div>
+                        
+                        <!-- honey pot -->
+                        <input type="text" name="_honey" style="display: none;" >
+                        <!-- Disable Captcha  -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- success redirect  -->
+                        <input type="hidden" name="_next" value="https://bctrees.netlify.app/contact/success.html">
+                    
+                        <div class="email form">
+                            <label for="email_address">E-mail:</label>
+                            <input class="form form_text-box" type="text" name="email" id="email_address" required>
+                        </div>
+                    
+                        <div class="message form">
+                            <label for="message">Message:</label>
+                            <textarea class="form form_text-box" name="message" id="message" rows="10" cols="30" required></textarea>
+                        </div>
+                    </section>
+                    
+                    <div class="submit form">
+                        <input type="submit" value="Send" id="button">
+                    </div> 
 
-            </form>
+                </form> 
+            </div>
         </div>
 
     </div>

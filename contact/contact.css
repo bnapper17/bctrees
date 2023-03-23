@@ -87,6 +87,14 @@ a:hover {
 }
 
 
+
+@media screen and (min-width: 1000px) {
+    .form_content {
+        max-width: 60vw;
+        margin-inline: auto;
+    }
+}
+
 header {
     line-height: 1.75rem;
 }
