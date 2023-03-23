@@ -347,8 +347,8 @@ body {
     background-color: black;
     display: flex;
     justify-content: space-evenly;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
 }
@@ -362,6 +362,12 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+@media screen and (min-width: 1200px) {
+    .business_info {
+        font-size: 36px;
+    }
+}
+
 .facebook_link {
     position: absolute;
     bottom: 10%;
@@ -369,5 +375,6 @@ body {
 }
 
 #logo {
+    max-width: 250px;
     width: 35vw;
 }
