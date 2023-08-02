@@ -49,8 +49,13 @@ a:hover {
     display: none;
     margin-block: auto;
     font-size: 1.75rem;
-    margin-left: .75rem
+    margin-left: .75rem;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px 2px rgba(0,0,0,0.3);
+    padding: .25em;
 }
+ 
 .hamburger {
     position:  relative;
     display: none;
