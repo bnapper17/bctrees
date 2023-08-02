@@ -48,14 +48,14 @@ a:hover {
 .mobile_name {
     display: none;
     margin-block: auto;
-    font-size: 2rem;
-    margin-left: 1rem
+    font-size: 1.75rem;
+    margin-left: .75rem
 }
 .hamburger {
     position:  relative;
     display: none;
     margin-block: auto;
-    margin-right: 3rem;
+    margin-right: .75rem;
     width: 40px;
     height: 40px;
     cursor: pointer;
