@@ -53,6 +53,68 @@ a:hover {
 
 .mobile_name {
     display: none;
+    margin-block: auto;
+    font-size: 2rem;
+    margin-left: 1rem
+}
+.hamburger {
+    position:  relative;
+    display: none;
+    margin-block: auto;
+    margin-right: 3rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 99;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block; 
+    width: 100%;
+    height: 3px;
+    background-color: rgb(228, 83, 16);
+    margin: 10px 0px;
+    transition: 0.4s; 
+}
+
+.hamburger.is-active:before{
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-11px,-9px);
+}
+
+.mobile-nav-container {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 98;
+    background-color: rgba(0,0,0,0.9);
+    transition: 0.4s;
+}
+
+.mobile-nav-container.is-active{
+    left:0;
+}
+.mobile-nav {
+    margin-top: 25%;
+}
+.mobile-nav .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    list-style: none;
+    padding-bottom: 2.5rem;
 }
 
 @media screen and (min-width: 1400px) {
@@ -73,11 +135,14 @@ a:hover {
         display: block;
         padding: 1vw;
     }
-    .link{
-        font-size: 4vw;
-        margin-left: 1rem;
+    .navigation {
+        display: none;
+    }
+    .hamburger {
+        display: block;
     }
 }
+
 
 .container {
     color: white;
