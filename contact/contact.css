@@ -157,7 +157,7 @@ a:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url('../Resources/Pictures/logo.png');
     background-position: center;
     background-repeat: no-repeat;
-    padding-inline: 3em;
+    padding-inline: .75em;
     overflow-y: scroll;
 }
 
@@ -176,7 +176,7 @@ header {
 
 .form_container h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 2.75rem;
     padding-block: 2rem;
 }
 
